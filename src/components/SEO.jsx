@@ -10,7 +10,7 @@ const SEO = () => {
   const blogURL = config.siteUrl + config.pathPrefix;
   const schemaOrgJSONLD = [
     {
-      '@context': 'http://schema.org',
+      '@context': 'https://schema.org',
       '@type': 'WebSite',
       url: 'davisfamilycatering.com',
       name: "Davis Family Catering",
