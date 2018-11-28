@@ -16,6 +16,7 @@
 		"gatsby-plugin-offline": "^2.0.10",
 		"gatsby-plugin-react-helmet": "^3.0.1",
 		"gatsby-plugin-sharp": "^2.0.10",
+		"gatsby-source-facebook": "^1.0.2",
 		"gatsby-source-filesystem": "^2.0.6",
 		"gatsby-transformer-sharp": "^2.1.7",
 		"postcss": "^7.0.5",
@@ -26,6 +27,7 @@
 		"react-emotion": "^9.2.12",
 		"react-helmet": "^5.2.0",
 		"react-spring": "^6.1.8",
+		"serve": "^10.1.1",
 		"tailwindcss": "^0.6.6",
 		"typeface-cantata-one": "^0.0.54",
 		"typeface-open-sans": "^0.0.54"
@@ -36,7 +38,10 @@
 		"family",
 		"parties",
 		"events",
-		"good price"
+		"good price",
+		"davis catering",
+		"davis family catering",
+		"family catering"
 	],
 	"scripts": {
 		"dev": "gatsby develop -o",
