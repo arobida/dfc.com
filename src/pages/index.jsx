@@ -168,10 +168,10 @@ const Index = () => (
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
-            Hello, <br /> I'm Sussette Davis.
+            Hello, <br /> I'm Susette Davis.
             <img src={heart}/>
           </BigTitle>
-          <Subtitle>I'm the Head Chef and Owner of Davis Family Catering. I am a small business hoping to share some of our family values and cooking with yours.</Subtitle>
+          <Subtitle>I'm the Head Chef and Owner of Davis Family Catering based in <strong itemprop="location" itemscope itemtype="https://schema.org/Place">San Diego, California</strong>. I am a small business hoping to share some of our family values and cooking with yours.</Subtitle>
         </Hero>
       </Content>
       <DividerMiddle

@@ -10,10 +10,10 @@ const SEO = () => {
   const blogURL = config.siteUrl + config.pathPrefix;
   const schemaOrgJSONLD = [
     {
-      '@context': 'https://schema.org',
-      '@type': 'WebSite',
-      url: 'davisfamilycatering.com',
-      name: "Davis Family Catering",
+      '@context': 'https://schema.org/',
+      '@type': 'LocalBusiness',
+      url: 'https://davisfamilycatering.com',
+      name: 'Davis Family Catering',
       alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
     },
   ];
