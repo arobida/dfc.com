@@ -5,13 +5,13 @@ module.exports = {
 
   siteTitle: 'Davis Family Catering', // Navigation and Site Title
   siteTitleAlt: 'Davis Catering', // Alternative Site title for SEO
-  siteUrl: 'davisfamilycatering.com', // Domain of your site. No trailing slash!
+  siteUrl: 'https://davisfamilycatering.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logos/logo-1024.png', // Used for SEO and manifest
   siteDescription: 'Website for my catering business',
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
-  userTwitter: '', // Twitter Username
+  userTwitter: '@theafr86', // Twitter Username
   ogSiteName: 'https://www.facebook.com/Davisfamilycatering', // Facebook Site Name
   ogLanguage: 'en_US', // Facebook Language
 
