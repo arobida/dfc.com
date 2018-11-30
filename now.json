@@ -1,17 +1,17 @@
 {
 	"version": 2,
-	"name":"dfc",
-	"alias":"davisfamilycatering.com",
+	"name": "dfc",
+	"alias": "https://davisfamilycatering.com",
 	"builds": [
-	  {
-		"src": "/public/**",
-		"use": "@now/static"
-	  }
+		{
+			"src": "/public/**",
+			"use": "@now/static"
+		}
 	],
 	"routes": [
-	  {
-		"src": "/(.*)",
-		"dest": "/public/$1"
-	  }
+		{
+			"src": "/(.*)",
+			"dest": "/public/$1"
+		}
 	]
-  }
+}

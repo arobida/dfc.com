@@ -5,7 +5,7 @@ module.exports = {
 
   siteTitle: 'Davis Family Catering', // Navigation and Site Title
   siteTitleAlt: 'Davis Family Catering', // Alternative Site title for SEO
-  siteUrl: 'https://davisfamilycatering.com', // Domain of your site. No trailing slash!
+  siteUrl: 'davisfamilycatering.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logos/logo-1024.png', // Used for SEO and manifest
   siteDescription: 'Website for my catering business',
