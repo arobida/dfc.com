@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
+import Pictures from './Pictures';
 
 const Wrapper = styled.a`
   width: 100%;
@@ -24,8 +25,10 @@ const Title = styled.div`
 `;
 
 const ProjectCard = ({ title, link, children, bg }) => (
-  <Wrapper href={link} target="_blank" rel="noopener noreferrer" bg={bg}>
-    <Text>{children}</Text>
+  <Wrapper bg={bg}>
+    <Text href={link} target="_blank" rel="noopener noreferrer">
+      {children}
+    </Text>
     <Title>{title}</Title>
   </Wrapper>
 );

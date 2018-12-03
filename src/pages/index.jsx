@@ -7,12 +7,14 @@ import { Parallax, ParallaxLayer } from 'react-spring/dist/addons';
 import SEO from '../components/SEO';
 import SVG from '../components/SVG';
 import ProjectCard from '../components/ProjectCard';
+import Pictures from '../components/Pictures';
 import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations';
 import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
+import '../styles/global';
+// Images for background
 import triangle from '../images/triangle.svg';
 import fire from '../images/fire.png';
-import '../styles/global';
 import coffee from '../images/coffee.svg'
 import facebook from '../images/facebook.svg'
 import heart from '../images/heart.svg'
@@ -171,7 +173,7 @@ const Index = () => (
             Hello, <br /> I'm Susette Davis.
             <img src={heart}/>
           </BigTitle>
-          <Subtitle>I'm the Head Chef and Owner of Davis Family Catering based in <strong itemprop="location" itemscope itemtype="https://schema.org/Place">San Diego, California</strong>. I am a small business hoping to share some of our family values and cooking with yours.</Subtitle>
+          <Subtitle>I'm the Head Chef and Owner of Davis Family Catering based in <strong itemProp="location" itemScope itemType="https://schema.org/Place">San Diego, California</strong>. I am a small business hoping to share some of our family values and cooking with yours.</Subtitle>
         </Hero>
       </Content>
       <DividerMiddle
@@ -182,14 +184,14 @@ const Index = () => (
       />
       <Content speed={0.4} offset={1.2} factor={2}>
         <Inner>
-          <Title>Projects</Title>
+          <Title>Food</Title>
           <ProjectsWrapper>
             <ProjectCard
-              title="Freiheit"
-              link="https://www.behance.net/gallery/58937147/Freiheit"
+              title="Davis Family Catering"
+              link="https://www.facebook.com/Davisfamilycatering/"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
             >
-              This project is my entry to Adobe's #ChallengeYourPerspective contest.
+              <Pictures/>
             </ProjectCard>
           </ProjectsWrapper>
         </Inner>
