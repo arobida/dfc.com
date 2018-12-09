@@ -42,12 +42,6 @@ export default class Pictures extends React.Component {
               <img src={sauce} style={{ width: '100%', height: 'auto' }} />
             </Slide>
           </Slider>
-          <Dot slide={0} />
-          <Dot slide={1} />
-          <Dot slide={2} />
-          <Dot slide={3} />
-          <Dot slide={4} />
-          <Dot slide={5} />
         </CarouselProvider>
       </Wrapper>
     );
