@@ -6,7 +6,7 @@ import 'typeface-open-sans';
 import { Parallax, ParallaxLayer } from 'react-spring/dist/addons';
 import SEO from '../components/SEO';
 import SVG from '../components/SVG';
-import ProjectCard from '../components/ProjectCard';
+import ReviewCard from '../components/ReviewCard';
 import Pictures from '../components/Pictures';
 import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations';
 import { hidden } from '../styles/utils';
@@ -80,14 +80,14 @@ const Subtitle = styled.p`
 const ProjectsWrapper = styled.div`
   ${tw('flex flex-wrap justify-between mt-8')};
   display: grid;
-  grid-gap: 4rem;
+  ${'' /* grid-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
   @media (max-width: 1200px) {
     grid-gap: 3rem;
   }
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    grid-gap: 2rem; */}
   }
 `;
 
@@ -184,15 +184,16 @@ const Index = () => (
       />
       <Content speed={0.4} offset={1.2} factor={2}>
         <Inner>
-          <Title>Food</Title>
           <ProjectsWrapper>
-            <ProjectCard
-              title="Davis Family Catering"
-              link="https://www.facebook.com/Davisfamilycatering/"
+          <Title>Food</Title>
+          <Pictures/>
+          <Title>Reviews</Title>
+            <ReviewCard
+              link="https://www.facebook.com/pg/Davisfamilycatering/reviews/"
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
             >
-              <Pictures/>
-            </ProjectCard>
+            Good old fashioned home cooked meals that hit the spot every time. Never truly had real authentic Mexican food until Davis Family Catering and probably won’t find any better.
+            </ReviewCard>
           </ProjectsWrapper>
         </Inner>
       </Content>

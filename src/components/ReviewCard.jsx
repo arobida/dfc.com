@@ -19,24 +19,15 @@ const Text = styled.div`
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `;
 
-const Title = styled.div`
-  ${tw('text-white uppercase text-2xl md:text-3xl xl:text-4xl tracking-wide font-sans pt-8')};
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-`;
-
-const ProjectCard = ({ title, link, children, bg }) => (
-  <Wrapper bg={bg}>
-    <Text href={link} target="_blank" rel="noopener noreferrer">
-      {children}
-    </Text>
-    <Title>{title}</Title>
+const ReviewCard = ({ link, children, bg }) => (
+  <Wrapper href={link} target="_blank" rel="noopener noreferrer" bg={bg}>
+    <Text>{children}</Text>
   </Wrapper>
 );
 
-export default ProjectCard;
+export default ReviewCard;
 
-ProjectCard.propTypes = {
-  title: PropTypes.string.isRequired,
+ReviewCard.propTypes = {
   link: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
   bg: PropTypes.string.isRequired,
